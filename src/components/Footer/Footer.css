@@ -1,0 +1,29 @@
+.footer-wrapper {
+  background: ghostwhite;
+}
+.footer-container {
+  justify-content: space-between;
+}
+
+/*LEFT SIDE*/
+.f-left {
+  gap: 1rem;
+}
+
+/*RIGHT SIDE*/
+.f-menu {
+  gap: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 620px) {
+  .footer-container {
+    justify-content: center;
+  }
+
+  .footer-container > div {
+    align-items: center !important;
+    text-align: center;
+  }
+}

@@ -1,0 +1,85 @@
+.products-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.products-head {
+  margin-bottom: 2rem;
+}
+
+.house-card {
+  gap: 0.6rem;
+  max-width: max-content;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 0.5s ease-in;
+}
+
+.house-card > img {
+  width: 100%;
+  max-width: 15rem;
+}
+
+.house-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.house-card > :nth-child(3) {
+  font-size: 1.5rem;
+}
+
+.house-card > :nth-child(4) {
+  font-size: 0.7rem;
+  width: 15rem;
+}
+
+.house-card:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(136, 160, 255, 0.46) 217.91%
+  );
+  transform: scale(1.025);
+  cursor: pointer;
+  box-shadow: 0px 72px 49px -51px rgba(100, 99, 99, 0.363);
+}
+
+.swiper-horizontal {
+  overflow: visible;
+}
+
+.products-button {
+  position: absolute;
+  gap: 1rem;
+  top: -4rem;
+  right: 0;
+}
+
+.products-button > button {
+  font-size: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.products-button > :nth-child(1) {
+  background-color: #eeeeff;
+}
+
+.products-button > :nth-child(2) {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.267);
+}
+
+@media (max-width: 640px) {
+  .products-head {
+    align-items: center;
+  }
+  .products-button {
+    position: initial;
+  }
+}
