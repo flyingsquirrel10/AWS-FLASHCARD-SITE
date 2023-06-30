@@ -7,7 +7,7 @@
   margin-bottom: 2rem;
 }
 
-.house-card {
+.product-card {
   gap: 0.6rem;
   max-width: max-content;
   padding: 1rem;
@@ -16,26 +16,60 @@
   transition: all 0.5s ease-in;
 }
 
-.house-card > img {
+.product-card {
+  gap: 0.6rem;
+  max-width: max-content;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: auto;
+  transition: all 0.5s ease-in;
+}
+
+.product-card > a {
+  gap: 0.6rem;
+  max-width: max-content;
+}
+
+.product-card > img {
+  width: 100%;
+  max-width: 15rem;
+}
+.product-card > a > img {
   width: 100%;
   max-width: 15rem;
 }
 
-.house-price {
+.product-price {
   font-size: 1.2rem;
   font-weight: bold;
 }
 
-.house-card > :nth-child(3) {
+.product-card > :nth-child(3) {
   font-size: 1.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
 }
 
-.house-card > :nth-child(4) {
+.product-card > a > :nth-child(3) {
+  font-size: 1.5rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.product-card > :nth-child(4) {
   font-size: 0.7rem;
   width: 15rem;
+  height: 6rem;
+}
+.product-card > a > :nth-child(4) {
+  font-size: 0.7rem;
+  width: 15rem;
+  height: 6rem;
 }
 
-.house-card:hover {
+.product-card:hover {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,

@@ -10,11 +10,15 @@ const Header = () => {
       return { right: !menuOpened && "-100%" };
     }
   };
+  const handleContactButtonClick = () => {
+    const emailAddress = "trumountainllc@gmail.com";
+
+    const mailtoLink = `mailto:${emailAddress}`;
+    window.location.href = mailtoLink;
+  };
   return (
     <section className="h-wrapper">
       <div className="flexCenter paddings innerWidth h-container">
-        <img src="./Trumountain-removebg.png" alt="logo" width={100}></img>
-
         <OutsideClickHandler
           onOutsideClick={() => {
             setMenuOpened(false);
@@ -22,10 +26,13 @@ const Header = () => {
         >
           <div className="flexCenter h-menu" style={getMenuStyles(menuOpened)}>
             <a href="#Products">Packages</a>
+            <a href="#Reviews">Reviews</a>
+            <a href="#FlashcardsDescription">Product Description</a>
             <a href="#OurValues">Our Value</a>
+            <a href="/faq"> FAQ</a>
             <a href="#ContactUs"> Contact Us</a>
-            <button className="button">
-              <a href="mailto:emailfake@email.com">Contact</a>
+            <button onClick={handleContactButtonClick} className="button">
+              Contact
             </button>
           </div>
         </OutsideClickHandler>

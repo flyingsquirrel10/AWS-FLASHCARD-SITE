@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Flashcards",
+    "price": "45.00",
+    "detail": "Comprehensive Coverage: Our flashcards cover all major AWS services and exam objectives, ensuring a comprehensive understanding of the AWS ecosystem.",
+    "image": "./AWScardsWhite.jpg",
+    "link": "https://www.amazon.com/dp/B0C2L1YP2C?ref=myi_title_dp"
+  },
+  {
+    "name": "Flashcards + 3D Printed Box",
+    "price": "60.00",
+    "detail": "Master AWS Exams in Style: Elevate Your Prep with Premium Flashcards and a Custom 3D Printed Box.",
+    "image": "./FlashcardsAndBox.jpg",
+    "link": "https://www.amazon.com/dp/B0C2L1YP2C?ref=myi_title_dp"
+
+  },
+  {
+    "name": "Flashcards + 1/1",
+    "price": "110.00",
+    "detail": "Want a more personalized touch?? Gain In-Depth Insights, Clarify Concepts, and Accelerate Your AWS Journey in Just One Hour.",
+    "image": "./1on1.jpg"
+  },
+  {
+    "name": "Flashcards + 1/1 + 3D Printed Box",
+    "price": "112.00",
+    "detail": "All inclusive package!  Our Comprehensive Flashcards, Custom 3D Printed Box, and Expert 1-on-1 Sessions Combine to Deliver an Unmatched Learning Experience.",
+    "image": "./allInOne.jpg"
+  }
+]

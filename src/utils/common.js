@@ -1,4 +1,4 @@
-export const sliderSettings = {
+export const sliderSettingsProducts = {
   slidesPerView: 1,
   spaceBetween: 50,
   breakpoints: {
@@ -13,6 +13,25 @@ export const sliderSettings = {
     },
     1100: {
       slidesPerView: 4,
+    },
+  },
+};
+
+export const sliderSettingsReviews = {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+    },
+    600: {
+      slidesPerView: 1,
+    },
+    750: {
+      slidesPerView: 1,
+    },
+    1100: {
+      slidesPerView: 1,
     },
   },
 };

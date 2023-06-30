@@ -1,0 +1,36 @@
+.description-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.description-head {
+  margin-bottom: 2rem;
+}
+
+.flashcard-intro {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  margin: 5% 0; /* Updated to add vertical spacing */
+}
+
+.grid-container {
+  display: grid;
+  /*grid-template-columns: 1fr minmax(auto, 1fr) 1fr; /* Left, middle, right column */
+  /* grid-template-rows: 100vh; */
+  grid-gap: 10px; /* Adjust the gap between columns if needed */
+  margin: auto;
+}
+
+/* Add custom styling for each column if desired */
+.left-column {
+  background-color: lightblue;
+}
+
+.middle-column {
+  background-color: lightgray;
+}
+
+.right-column {
+  background-color: lightgreen;
+}

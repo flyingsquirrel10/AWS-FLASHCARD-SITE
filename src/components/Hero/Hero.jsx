@@ -14,6 +14,7 @@ const Hero = () => {
       <div className="paddings innerWidth flexCenter hero-container">
         {/*left side*/}
         <div className="flexColStart left">
+          <title> AWS EXAM TEST PREP</title>
           <div className="title">
             <div className="orange-circle"></div>
             <motion.h1
@@ -24,18 +25,18 @@ const Hero = () => {
                 type: "spring",
               }}
             >
-              Enhance Your
-              <br />
-              Studying Experience
+              {" "}
+              AWS <br /> EXAM PREP
             </motion.h1>
           </div>
           <div className="flexColStart description">
             <span className="secondaryText">
               {" "}
-              Find a variety of properties that suit you very easilty{" "}
+              Enhance Your Studying Experience: Invest in your future today and
+              unlock the path
             </span>
             <span className="secondaryText">
-              Forget all difficulties in finding a residence for you
+              to a thriving career in the cloud.{" "}
             </span>
           </div>
           <div className="flexCenter stats">
@@ -55,11 +56,11 @@ const Hero = () => {
             </div>
             <div className="flexColCenter stat">
               <span>
-                <CountUp end={728} />
+                <CountUp end={100} />
                 <span>+</span>
               </span>
 
-              <span className="secondaryText">Happy Customers</span>
+              <span className="secondaryText">Topics Covered</span>
             </div>
           </div>
         </div>
@@ -75,7 +76,7 @@ const Hero = () => {
             }}
             className="img-container"
           >
-            <img src="/AWScards_1.jpg" alt="building" />
+            <img src="./AWScards_1.jpg" alt="building" />
           </motion.div>
         </div>
       </div>

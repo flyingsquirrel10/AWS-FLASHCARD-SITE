@@ -1,0 +1,23 @@
+[
+  {
+    "header": "Why Use Flashcards?",
+    "subheaders": [
+      {
+        "subheader": "Spaced Repetition",
+        "description": "Flashcards are a perfect tool for implementing spaced repetition. By reviewing flashcards at increasing intervals over time, you optimize your learning and reinforce the information effectively"
+      },
+      {
+        "subheader": "Active Recall",
+        "description": "Flashcards promote active recall by presenting a question or prompt on one side and requiring you to recall the answer from memory. This active engagement strengthens your ability to retrieve information and improves long-term retention."
+      },
+      {
+        "subheader": "Engaging and Interactive",
+        "description": "Flashcards offer an interactive learning experience that keeps you engaged. The act of flipping through cards, testing yourself, and actively participating in the learning process makes studying more enjoyable and increases motivation"
+      },
+      {
+        "subheader": "Portable Study Tool",
+        "description": "Flashcards are portable and convenient, allowing you to study anytime, anywhere. You can carry them in your pocket or bag and use them during short breaks or idle moments to reinforce your knowledge"
+      }
+    ]
+  }
+]

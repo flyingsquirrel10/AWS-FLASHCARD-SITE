@@ -2,8 +2,6 @@ import React from "react";
 import "./Reviews.css";
 import { reviewsData } from "../../utils/reviews";
 import { useState } from "react";
-import leftArrow from "../../assets/leftArrow.png";
-import rightArrow from "../../assets/rightArrow.png";
 import { motion } from "framer-motion";
 import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
@@ -14,7 +12,7 @@ const Reviews = () => {
   return (
     <div className="Reviews" id="Reviews">
       <div className="left-t">
-        <span>Reviews</span>
+        <h2>Reviews</h2>
         <span className="stroke-text">What they</span>
         <span>say about us</span>
         <motion.span
@@ -30,7 +28,6 @@ const Reviews = () => {
           <span style={{ color: "var(--orange)" }}>
             {reviewsData[selected].name}
           </span>{" "}
-         
         </span>
         <div className="arrows">
           <MdArrowBack

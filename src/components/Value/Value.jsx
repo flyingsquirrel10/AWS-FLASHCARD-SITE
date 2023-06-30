@@ -24,7 +24,7 @@ const Value = () => {
         {/*LEFT SIDE*/}
         <div className="left">
           <div className="img-container">
-            <img src="/1on1.jpg" alt="House" />
+            <img src="./1_Studying.jpg" alt="House" />
           </div>
         </div>
 
@@ -33,9 +33,9 @@ const Value = () => {
           <span className="orangeText">Our Value</span>
           <span className="primaryText">Value We Give to You</span>
           <span className="secondaryText">
-            We always ready to help by providijng the best services for you.{" "}
-            <br />
-            We beleive a good blace to live can make your life better
+            Experience the Unmatched Value of our AWS Exam Prep Flashcards:
+            Maximize your learning efficiency, reinforce crucial concepts, and
+            gain the confidence needed to succeed in AWS certification exams.
           </span>
 
           <Accordion allowMultipleExpanded={false} preExpanded={[0]}>

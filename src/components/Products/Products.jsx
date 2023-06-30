@@ -2,8 +2,8 @@ import React from "react";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/css";
 
-import data from "../../utils/slider.json";
-import { sliderSettings } from "../../utils/common";
+import productData from "../../utils/products.json";
+import { sliderSettingsProducts } from "../../utils/common";
 
 import "./Products.css";
 
@@ -16,20 +16,39 @@ const Products = () => {
           <span className="primaryText">Popular products</span>
         </div>
 
-        <Swiper {...sliderSettings}>
-          <SliderButtons />
-          {data.map((house, key) => (
+        <Swiper {...sliderSettingsProducts}>
+          {/* <SliderButtons /> */}
+          {productData.map((product, key) => (
             <SwiperSlide key={key}>
-              <div className="flexColStart house-card">
-                <img src={house.image} alt="House image" />
+              <div className="flexColStart product-card">
+                {product.link ? (
+                  <a
+                    className="flexColStart"
+                    href={product.link}
+                    target="_blank"
+                  >
+                    <img src={product.image} alt="product image" />
+                    <span className="secondaryText product-price">
+                      <span style={{ color: "orange" }}>$</span>
+                      <span>{product.price}</span>
+                    </span>
 
-                <span className="secondaryText house-price">
-                  <span style={{ color: "orange" }}>$</span>
-                  <span>{house.price}</span>
-                </span>
+                    <span className="primaryText">{product.name}</span>
+                    <span className="secondaryText">{product.detail}</span>
+                  </a>
+                ) : (
+                  <>
+                    <img src={product.image} alt="product image" />
 
-                <span className="primaryText">{house.name}</span>
-                <span className="secondaryText">{house.detail}</span>
+                    <span className="secondaryText product-price">
+                      <span style={{ color: "orange" }}>$</span>
+                      <span>{product.price}</span>
+                    </span>
+
+                    <span className="primaryText">{product.name}</span>
+                    <span className="secondaryText">{product.detail}</span>
+                  </>
+                )}
               </div>
             </SwiperSlide>
           ))}
@@ -40,13 +59,3 @@ const Products = () => {
 };
 
 export default Products;
-
-const SliderButtons = () => {
-  const swiper = useSwiper();
-  return (
-    <div className="flexCenter products-button">
-      <button onClick={() => swiper.slidePrev()}>&lt;</button>
-      <button onClick={() => swiper.slideNext()}>&gt;</button>
-    </div>
-  );
-};

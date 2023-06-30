@@ -6,6 +6,13 @@ import { MdOutgoingMail } from "react-icons/md";
 import "./Contact.css";
 
 const Contact = () => {
+  const handleContactEmailClick = () => {
+    const emailAddress = "trumountainllc@gmail.com";
+
+    const mailtoLink = `mailto:${emailAddress}`;
+    window.location.href = mailtoLink;
+  };
+
   return (
     <section id="ContactUs" className="contact-wrapper">
       <div className="paddings innerWidth flexCenter contact-container">
@@ -25,12 +32,18 @@ const Contact = () => {
                 </div>
                 <div className="flexColStart detail">
                   <span className="primaryText">Email</span>
-                  <span className="secondaryText">fakeemail@gmail.com</span>
+                  <span className="secondaryText">
+                    trumountainllc@gmail.com
+                  </span>
                 </div>
               </div>
-              <button className="flexCenter button">Email</button>
+              {/* <a href="mailto:trumountainllc@gmail.com"> */}
+              <button className="button" onClick={handleContactEmailClick}>
+                Email
+              </button>
+              {/* </a> */}
             </div>
-            <div className="flexColCenter mode">
+            {/* <div className="flexColCenter mode">
               <div className="flexStart">
                 <div className="icon">
                   <BsChatFill />
@@ -41,10 +54,10 @@ const Contact = () => {
                 </div>
               </div>
               <button className="flexCenter button">Message now</button>
-            </div>
+            </div> */}
           </div>
           <div className="flexCenter row">
-            <div className="flexColCenter mode">
+            {/* <div className="flexColCenter mode">
               <div className="flexStart">
                 <div className="icon">
                   <BsCameraVideoFill />
@@ -55,7 +68,7 @@ const Contact = () => {
                 </div>
               </div>
               <button className="flexCenter button">FAQ</button>
-            </div>
+            </div> */}
             {/* <div className="flexColCenter mode">
               <div className="flexStart">
                 <div className="icon">
@@ -74,7 +87,7 @@ const Contact = () => {
         {/*RIGHT SIDE*/}
         <div className="flexEnd c-right">
           <div className="img-container">
-            <img src="/1on1.jpg" alt="House image" />
+            <img src="./contact.jpg" alt="Phone image" />
           </div>
         </div>
       </div>

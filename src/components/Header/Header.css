@@ -3,13 +3,14 @@
   z-index: 99;
 }
 .h-container {
-  justify-content: space-around;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  justify-content: flex-end;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   color: var(--secondary);
 }
 .h-menu {
   gap: 2rem;
+  font-size: large;
 }
 .h-menu > *:hover {
   cursor: pointer;

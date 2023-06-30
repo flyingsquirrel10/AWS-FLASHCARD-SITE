@@ -33,7 +33,7 @@
   background: var(--orange-gradient);
   position: absolute;
   top: -10%;
-  right: 28%;
+  right: 46%;
   z-index: -1;
 }
 
@@ -76,7 +76,7 @@
 
 .img-container > img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 @media (max-width: 640px) {
