@@ -24,15 +24,16 @@ function App() {
         <Header />
         <Hero />
       </div>
-      {/* <Products />
+      <Products />
       <FlashcardsDescription />
       <Reviews />
       <Value />
-      <FAQSection /> */}
-      <Routes>
+      {/* <Routes>
         <Route path='/faq'  element={<FAQSection/>} />
-      </Routes>
+      </Routes> */}
       <Contact />
+      <FAQSection />
+
       <Footer />
     </div>
   );

@@ -11,7 +11,12 @@
   font-size: 1.3rem;
   display: flex;
   align-items: center;
-  margin: 5% 0; /* Updated to add vertical spacing */
+  margin: 2% 0 5%; /* Updated to add vertical spacing */
+}
+
+.headerDescription{
+  font-weight: 600;
+  font-size: 1.7rem;
 }
 
 .grid-container {
